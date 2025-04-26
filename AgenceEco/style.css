@@ -70,19 +70,19 @@ nav {
 
 .accueil-texte {
   position: absolute;
-  bottom: 100px; /* Ajustez cette valeur pour la position verticale */
-  right: 100px; /* Ajustez cette valeur pour la position horizontale */
+  bottom: 130px;
+  right: 130px;
   margin: 0;
-  color: white; /* Couleur du texte principal */
-  font-size: 4.5em; /* Taille du texte principal */
+  color: white;
+  font-size: 4.5rem;
   text-align: right;
   font-weight: 500;
 }
 
 .accueil-texte span {
   display: block;
-  font-size: 1.2em; /* Taille du texte de la deuxième ligne */
-  color: #d5f31f; /* Couleur du texte de la deuxième ligne */
+  font-size: 5.5rem;
+  color: #d5f31f;
   font-weight: 700;
 }
 
@@ -99,7 +99,6 @@ nav {
   font-weight: 600;
   padding-top: 70px;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .equipe-container h2 {
