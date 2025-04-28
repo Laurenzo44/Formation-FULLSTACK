@@ -14,27 +14,31 @@
 </head>
 
 <body>
-
+    <!-- En-tête du site avec navigation principale -->
     <header>
 
         <nav>
             <h2 class="agence">Agence<em>eco</em></h2>
+
+            <!-- Menu Burger -->
+            <label for="menu-burger">☰</label>
+            <input type="checkbox" id="menu-burger">
+
+            <!-- Menu de navigation -->
             <div class="menu">
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#equipe">Notre équipe</a></li>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#">Témoignages</a></li>
-                    <li><a href="#contact">Contactez-nous</a></li>
-                    <li><a href="#galerie">Notre galerie</a></li>
-                </ul>
+                <a href="#accueil">Accueil</a>
+                <a href="#equipe">Notre équipe</a>
+                <a href="#services">Nos services</a>
+                <a href="#">Témoignages</a>
+                <a href="#contact">Contactez-nous</a>
+                <a href="#galerie">Notre galerie</a>
             </div>
         </nav>
 
     </header>
 
     <main>
-
+        <!-- Section d'accueil -->
         <section class="accueil" id="accueil">
             <a href=image360.html>
                 <img src="images/accueil-feuilles.jpg" alt="Image de Bienvenue">
@@ -42,10 +46,13 @@
             <h1 class="accueil-texte">Bienvenue dans votre <span>agence web écologique</span></h1>
         </section>
 
-        <section class="equipe" id="equipe">
-            <h2>Notre équipe</h2>
+        <!-- Section équipe -->
+        <section class="equipe">
+            <h2 id="equipe">Notre équipe</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, itaque eius.
                 Voluptas esse ipsa suscipit! Voluptate ipsa, eveniet sit assumenda amet sapiente.</p>
+
+            <!-- Présentation des membres de l'équipe -->
             <div class="equipe-container">
                 <div class="equipe-item">
                     <div class="equipe-image-container">
@@ -71,6 +78,7 @@
             </div>
         </section>
 
+        <!-- Section chiffres clés -->
         <div class="chiffres">
             <div class="chiffres-container">
                 <div class="chiffre-item">
@@ -92,8 +100,11 @@
             </div>
         </div>
 
-        <section class="services" id="services">
-            <h2 class="services-titre">Nos services</h2>
+        <!-- Section services -->
+        <section class="services">
+            <h2 class="services-titre" id="services">Nos services</h2>
+
+            <!-- Présentation des services proposés -->
             <div class="services-container">
                 <div class="services-logo-texte">
                     <div class="services-logo">
@@ -110,9 +121,12 @@
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contactez-nous</h2>
+        <!-- Section contact -->
+        <section class="contact">
+            <h2 id="contact">Contactez-nous</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam error officiis!</p>
+
+            <!-- Formulaire de contact -->
             <form>
                 <div class="contact-container">
                     <div class="contact-form">
@@ -146,11 +160,14 @@
             </form>
         </section>
 
+        <!-- Section à propos -->
         <section class="apropos" id="apropos">
             <div class="apropos-container">
                 <div class="apropos-photo-equipe">
                     <img src="images/apropos-equipe.jpg" alt="Photo de l'équipe">
                 </div>
+
+                <!-- Présentation de l'entreprise et de ses valeurs -->
                 <div class="apropos-texte-logo">
                     <h2>A propos de nous</h2>
                     <p class="apropos-texte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque eligendi
@@ -181,10 +198,12 @@
             </div>
         </section>
 
-        <section id="galerie" class="galerie">
-            <h2>Notre galerie</h2>
+        <!-- Section galerie -->
+        <section class="galerie">
+            <h2 id="galerie">Notre galerie</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero explicabo aliquid quaerat dicta esse,
                 aut, eaque, repellat omnis cumque suscipit nam veniam!</p>
+            <!-- Galerie d'images -->
             <div class="galerie-image">
                 <img src="images/galerie.jpg" alt="Image de la galerie">
             </div>
@@ -194,6 +213,7 @@
             </div>
         </section>
 
+        <!-- Section informations diverses -->
         <section class="information">
             <div class="information-texte">
                 <h2>Content</h2>
@@ -215,6 +235,8 @@
                 <p>consectetur</p>
                 <p>adipiscing</p>
             </div>
+
+            <!-- Contact rapide -->
             <div class="information-contact">
                 <div class="information-phone">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icone">
@@ -242,6 +264,7 @@
 
     </main>
 
+    <!-- Pied de page -->
     <footer class="footer">
         <p>Copyright &copy; 2021 AGENCEECO - All rights reserved</p>
         <div class="footer-icones">
@@ -270,5 +293,16 @@
     </footer>
 
 </body>
+
+<!-- Script JS pour fermer le menu burger au scroll -->
+<script>
+    const menuBurger = document.getElementById('menu-burger');
+
+    window.addEventListener('scroll', () => {
+        if (menuBurger.checked) {
+            menuBurger.checked = false;
+        }
+    });
+</script>
 
 </html>

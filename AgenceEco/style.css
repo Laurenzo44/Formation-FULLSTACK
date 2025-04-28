@@ -1,3 +1,8 @@
+/* ========================================
+   Feuille de style principale pour Agenceeco
+   Auteur : Laurent
+   ======================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-/* <---------- MENU ----------> */
+/* ===== MENU ===== */
 
 nav {
   display: flex;
@@ -28,9 +33,8 @@ nav {
   box-sizing: border-box;
 }
 
-.menu ul {
+.menu {
   display: flex;
-  list-style: none;
   gap: 30px;
 }
 
@@ -41,9 +45,9 @@ nav {
   font-size: 1.4rem;
 }
 
-.agence {
-  color: #029d5b;
-  font-size: 2rem;
+nav > label,
+#menu-burger {
+  display: none;
 }
 
 .menu a:hover {
@@ -52,12 +56,18 @@ nav {
   color: #1c2126;
 }
 
+.agence {
+  color: #029d5b;
+  font-size: 2rem;
+}
+
+/* ===== ACCUEIL ===== */
+
 .accueil {
   position: relative;
   width: 100%;
   margin-top: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   padding-top: 68px;
 }
 
@@ -86,16 +96,16 @@ nav {
   font-weight: 700;
 }
 
+/* ===== EQUIPE ===== */
 .equipe {
   background-color: white;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .equipe > h2 {
   text-align: center;
   color: #029d5b;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   padding-top: 70px;
   margin-bottom: 30px;
@@ -144,7 +154,6 @@ nav {
   width: 350px;
 }
 
-/* Conteneur pour l'image */
 .equipe-image-container {
   width: 300px;
   height: 300px;
@@ -153,14 +162,12 @@ nav {
   margin: 0 auto;
 }
 
-/* Style de l'image */
 .equipe-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Ajustements individuels pour chaque image */
 .equipe-item:nth-child(1) .equipe-image-container img {
   object-position: 40% -10%;
   transform: scale(1.2);
@@ -176,6 +183,7 @@ nav {
   transform: scale(1.4);
 }
 
+/* ===== CHIFFRES ===== */
 .chiffres {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -191,7 +199,7 @@ nav {
 
 .chiffre-item {
   display: flex;
-  flex-direction: column; /* on empile le nombre au-dessus du texte */
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -209,12 +217,12 @@ nav {
   font-size: 2rem;
 }
 
+/* ===== SERVICES ===== */
 .services {
   background-color: white;
   padding: 120px;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .services-titre {
@@ -267,12 +275,12 @@ nav {
   font-weight: 600;
 }
 
+/* ===== CONTACT ===== */
 .contact {
   background-color: #053b44;
   padding: 100px 200px;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .contact h2 {
@@ -340,8 +348,8 @@ nav {
 
 .contact-form-message textarea {
   resize: none;
-  height: 400px; /* Hauteur par défaut */
-  max-height: 400px; /* Hauteur maximale par défaut */
+  height: 400px;
+  max-height: 400px;
 }
 
 textarea:focus,
@@ -365,12 +373,12 @@ input:focus {
   cursor: pointer;
 }
 
+/* ===== A PROPOS ===== */
 .apropos {
   background-color: white;
-  padding: 120px 120px 180px 120px;
+  padding: 120px;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .apropos-container {
@@ -383,7 +391,7 @@ input:focus {
 
 .apropos-photo-equipe,
 .apropos-texte-logo {
-  flex: 1 1 400px; /* même base, largeur min 400px */
+  flex: 1 1 400px;
   display: flex;
   flex-direction: column;
 }
@@ -391,7 +399,7 @@ input:focus {
 .apropos-photo-equipe img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* rempli sans déformer */
+  object-fit: cover;
   border-radius: 30px;
   display: block;
 }
@@ -457,12 +465,12 @@ input:focus {
   padding-top: 20px;
 }
 
+/* ===== GALERIE ===== */
 .galerie {
   background-color: white;
-  padding: 50px 120px 120px 120px;
+  padding: 100px 120px 120px 120px;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .galerie h2 {
@@ -525,6 +533,7 @@ input:focus {
   background-color: #1c2126;
 }
 
+/* ===== INFORMATIONS ===== */
 .information {
   background-color: #053b44;
   color: white;
@@ -584,6 +593,7 @@ input:focus {
   color: #d5f31f;
 }
 
+/* ===== PIED DE PAGE ===== */
 .footer {
   color: white;
   background-color: #04292c;
@@ -644,13 +654,14 @@ input:focus {
   color: #042f33;
 }
 
-@media screen and (max-width: 1290px) {
-  .accueil {
-    padding-top: 49px;
-  }
+h2[id] {
+  scroll-margin-top: 68px;
+}
 
+/* ===== RESPONSIVE 1290px ===== */
+@media screen and (max-width: 1290px) {
   .agence {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .menu a {
@@ -663,6 +674,10 @@ input:focus {
 
   .accueil-texte span {
     font-size: 3rem;
+  }
+
+  .chiffres-container {
+    gap: 50px;
   }
 
   .information-texte h2 {
@@ -710,26 +725,44 @@ input:focus {
   }
 }
 
+/* ===== RESPONSIVE 970px ===== */
 @media screen and (max-width: 970px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 40px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background: rgba(2, 157, 91, 0.9);
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    z-index: 2;
+    padding: 5px 3px;
+    border-radius: 8px;
+    gap: 5px;
+  }
+
+  nav > label {
+    display: flex;
+    font-size: 30px;
+    color: #029d5b;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 3;
+  }
+
+  #menu-burger:checked + .menu {
+    display: flex;
+  }
+
   .accueil {
     padding-top: 35px;
-  }
-
-  .agence {
-    font-size: 1rem;
-  }
-
-  nav {
-    padding: 5px 5px;
-  }
-
-  .menu a {
-    font-size: 0.8rem;
-  }
-
-  .menu ul {
-    gap: 10px;
-    display: flex;
   }
 
   .footer {
@@ -789,12 +822,6 @@ input:focus {
   .equipe-image-container {
     width: 200px;
     height: 200px;
-  }
-
-  .chiffres-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
   }
 
   .chiffres-nombre {
@@ -951,29 +978,19 @@ input:focus {
   }
 }
 
+/* ===== RESPONSIVE 650px ===== */
 @media screen and (max-width: 650px) {
-  .accueil {
-    padding-top: 55px;
+  h2[id] {
+    scroll-margin-top: 66px;
   }
 
-  nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
+  .accueil {
+    padding-top: 55px;
   }
 
   .agence {
     font-size: 1rem;
     margin-bottom: 5px;
-  }
-
-  .menu a {
-    font-size: 12px;
-  }
-
-  .menu ul {
-    gap: 5px;
   }
 
   .accueil-texte {
@@ -1013,15 +1030,8 @@ input:focus {
   }
 }
 
+/* ===== RESPONSIVE 500px ===== */
 @media screen and (max-width: 500px) {
-  .menu a {
-    font-size: 9px;
-  }
-
-  .menu ul {
-    gap: 2px;
-  }
-
   .accueil-texte {
     font-size: 1rem;
     bottom: 50px;
