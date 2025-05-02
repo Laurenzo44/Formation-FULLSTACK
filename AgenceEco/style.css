@@ -97,6 +97,7 @@ nav > label,
 }
 
 /* ===== EQUIPE ===== */
+
 .equipe {
   background-color: white;
   box-sizing: border-box;
@@ -184,6 +185,7 @@ nav > label,
 }
 
 /* ===== CHIFFRES ===== */
+
 .chiffres {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -218,6 +220,7 @@ nav > label,
 }
 
 /* ===== SERVICES ===== */
+
 .services {
   background-color: white;
   padding: 120px;
@@ -276,6 +279,7 @@ nav > label,
 }
 
 /* ===== CONTACT ===== */
+
 .contact {
   background-color: #053b44;
   padding: 100px 200px;
@@ -410,7 +414,6 @@ input:focus {
   border-radius: 30px;
   text-align: center;
   box-sizing: border-box;
-  justify-content: flex-start;
   color: #1c2126;
 }
 
@@ -466,6 +469,7 @@ input:focus {
 }
 
 /* ===== GALERIE ===== */
+
 .galerie {
   background-color: white;
   padding: 100px 120px 120px 120px;
@@ -534,6 +538,7 @@ input:focus {
 }
 
 /* ===== INFORMATIONS ===== */
+
 .information {
   background-color: #053b44;
   color: white;
@@ -594,6 +599,7 @@ input:focus {
 }
 
 /* ===== PIED DE PAGE ===== */
+
 .footer {
   color: white;
   background-color: #04292c;
@@ -659,6 +665,7 @@ h2[id] {
 }
 
 /* ===== RESPONSIVE 1290px ===== */
+
 @media screen and (max-width: 1290px) {
   .agence {
     font-size: 2rem;
@@ -726,6 +733,7 @@ h2[id] {
 }
 
 /* ===== RESPONSIVE 970px ===== */
+
 @media screen and (max-width: 970px) {
   nav {
     flex-direction: row;
@@ -979,6 +987,7 @@ h2[id] {
 }
 
 /* ===== RESPONSIVE 650px ===== */
+
 @media screen and (max-width: 650px) {
   h2[id] {
     scroll-margin-top: 66px;
@@ -1031,6 +1040,7 @@ h2[id] {
 }
 
 /* ===== RESPONSIVE 500px ===== */
+
 @media screen and (max-width: 500px) {
   .accueil-texte {
     font-size: 1rem;
