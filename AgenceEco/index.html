@@ -292,17 +292,19 @@
         </div>
     </footer>
 
+
+    <!-- Script JS pour fermer le menu burger au scroll -->
+
+    <script>
+        const menuBurger = document.getElementById('menu-burger');
+
+        window.addEventListener('scroll', () => {
+            if (menuBurger.checked) {
+                menuBurger.checked = false;
+            }
+        });
+    </script>
+
 </body>
-
-<!-- Script JS pour fermer le menu burger au scroll -->
-<script>
-    const menuBurger = document.getElementById('menu-burger');
-
-    window.addEventListener('scroll', () => {
-        if (menuBurger.checked) {
-            menuBurger.checked = false;
-        }
-    });
-</script>
 
 </html>
